@@ -23,7 +23,7 @@ function currentLine(array) {
   }
   else {
     for (var i = 0 ; i < array.length ; i++){
-      a.push((i + 1)+ "." + array[i] + " ")
+      a.push(1{i+1}. ${array[i]})
     }
     return b + a;
   }
