@@ -16,17 +16,15 @@ function nowServing (array) {
 }
 
 function currentLine(array) {
-  if ( array.length === 0 ) {
+  var a = [];
+  var b = "The line is currently: "
+  if (array.length === 0 ){
     return "The line is currently empty."
   }
   else {
-    var i = 1;
-    var j = 0;
-    var s = "The line is currently: "
-    while (i < array.length) {
-      array.push(i + array[j])
-      i++;
-      
+    for (var i = 0 ; i < array.length ; i++){
+      a.push((i + 1)"." + array[i])
     }
+    return b + a;
   }
 }
